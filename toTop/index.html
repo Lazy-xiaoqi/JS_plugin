@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            text-decoration: none;
+        }
+        body,html{
+            width: 100%;
+            height: 5000px;
+            background: -webkit-Linear-gradient(lightgray,lightcoral,lightblue);
+        }
+        a{
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            background: lawngreen;
+            color: red;
+            position: fixed;
+            right:30px;
+            bottom:30px;
+            line-height: 50px;
+        }
+    </style>
+</head>
+<body>
+<a href="javascript:;">toTop</a>
+<script src="jquery.js"></script>
+<script src="ToTop2.js"></script>
+<script>
+    var toTop=new ScrollStop({
+        el:$('a'),
+        duration:700
+    })
+</script>
+</body>
+</html>
